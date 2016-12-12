@@ -1,0 +1,126 @@
+/*Order of declarations*/
+
+/* Positioning */
+/* Box-model */
+/* Typography */
+
+
+/* global */
+body{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background-color: #42484f;
+  color: #fff;
+}
+
+.container {
+  width: 940px;
+
+  margin: 10px auto;
+}
+
+p { margin-top: 3px; }
+
+a {
+  /*color: #fff;*/
+  color: #e8b679;
+  /*text-transform: uppercase;*/
+}
+
+a:active {
+  color: #c7c5ce;
+}
+
+/* header */
+
+header { position: relative; }
+
+.menu-principal {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.menu-principal ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.menu-principal a { text-decoration: none; }
+
+/*slider*/
+
+.garota-perola {
+  text-align: center;
+
+  border: 1px solic #f2eded;
+
+}
+
+.garota-perola figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  text-align: right;
+}
+
+
+/*destaques*/
+
+.destaque-semana,
+.novidades,
+.parceiros {
+  width: 30%;
+  margin: 10px;
+}
+
+.destaque-semana,
+.novidades {
+  float: left;
+
+  padding: 5px;
+
+  text-align: left;
+}
+
+section + img {
+  max-width: 100%;
+}
+
+.parceiros { float: right; }
+
+.parceiro-1,
+.parceiro-2 {
+  margin-bottom: 15px;
+}
+
+
+/* footer */
+footer {
+  clear: both;
+
+  position: relative;
+
+  padding: 20px 0;
+}
+
+.social {
+  position: absolute;
+  bottom: 32px;
+  right: 0;
+}
+
+.social li {
+  float: left;
+  margin-left: 25px;
+}
+
+.social a {
+  height: 32px;
+  width: 32px;
+
+  display: block;
+  text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] { background-image: url(../img/facebook.png); }
+.social a[href*="twitter.com"] { background-image: url(../img/twitter.png); }
+.social a[href*="plus.google.com"] { background-image: url(../img/googleplus.png); }
